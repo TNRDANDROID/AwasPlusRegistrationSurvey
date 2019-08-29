@@ -4,7 +4,7 @@
 <data>
     <variable
         name="activity"
-        type="com.nic.PMAYSurvey.activity.CameraScreen" />
+        type="com.nic.AwaasPlusRegistrationSurvey.activity.CameraScreen" />
 </data>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/parent"

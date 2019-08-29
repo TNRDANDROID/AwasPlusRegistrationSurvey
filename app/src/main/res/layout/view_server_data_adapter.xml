@@ -5,7 +5,7 @@
 
         <variable
             name="adapter"
-            type="com.nic.PMAYSurvey.adapter.ViewServerDataListAdapter" />
+            type="com.nic.AwaasPlusRegistrationSurvey.adapter.ViewServerDataListAdapter" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -333,8 +333,7 @@
                                     style="@string/font_circular_book"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="SECC Id"
+                                    android:text="Awass+ Registration Id"
                                     android:textAlignment="viewEnd"
                                     android:textColor="#000"
                                     android:textSize="18sp" />
@@ -381,15 +380,13 @@
                                     android:textSize="18sp" />
                             </LinearLayout>
                         </LinearLayout>
-
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1.5dp"
                             android:layout_gravity="bottom"
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
-                            android:background="@drawable/background"
-                            />
+                            android:background="@drawable/background" />
 
                         <LinearLayout
                             android:id="@+id/alive_layout"
@@ -410,7 +407,6 @@
                                     style="@string/font_circular_book"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:padding="5dp"
                                     android:text="Beneficiary Alive"
                                     android:textAlignment="viewEnd"
                                     android:textColor="#000"
@@ -536,83 +532,6 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <View
-                            android:id="@+id/legal_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="1.5dp"
-                            android:layout_gravity="bottom"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
-                            android:visibility="gone"
-                            android:background="@drawable/background" />
-
-                        <LinearLayout
-                            android:id="@+id/beneficiary_migrated_layout"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:visibility="gone"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="8"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    style="@string/font_circular_book"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="Migrated"
-                                    android:textAlignment="viewEnd"
-                                    android:textColor="#000"
-                                    android:textSize="18sp" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    style="@string/font_circular_book"
-                                    android:layout_width="wrap_content"
-
-                                    android:layout_height="wrap_content"
-                                    android:padding="10dp"
-                                    android:text=":"
-                                    android:textColor="#000"
-                                    android:textSize="18sp" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="8"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/beneficiary_migrated_tv"
-                                    style="@string/font_circular_book"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:padding="10dp"
-                                    android:text="Y"
-                                    android:textAlignment="inherit"
-                                    android:textColor="#000"
-                                    android:textSize="18sp" />
-                            </LinearLayout>
-                        </LinearLayout>
 
 
                         <RelativeLayout

@@ -3,7 +3,7 @@
     <data>
         <variable
             name="activity"
-            type="com.nic.PMAYSurvey.activity.SplashScreen" />
+            type="com.nic.AwaasPlusRegistrationSurvey.activity.SplashScreen" />
     </data>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,35 +12,31 @@
     android:background="@drawable/background"
     tools:context="com.nic.RealTimeMonitoringSystem.activity.SplashScreen">
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@mipmap/tamilnadu_logo"
+        android:scaleType="centerCrop" />
+
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/_20sdp">
 
+
         <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_70sdp"
-            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginLeft="@dimen/_20sdp"
-            android:background="@mipmap/tamilnadu_logo"
+            android:background="@drawable/splash"
             android:scaleType="centerCrop" />
-
-        <TextView
-            android:id="@+id/headtext"
-            style="@style/font_circular_medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView1"
-            android:layout_centerInParent="true"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="PMAY Survey"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/_15sdp" />
 
     </RelativeLayout>
 

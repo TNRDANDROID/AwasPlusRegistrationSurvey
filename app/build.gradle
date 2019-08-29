@@ -6,13 +6,13 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.nic.PMAYSurvey"
+        applicationId "com.nic.AwaasPlusRegistrationSurvey"
         minSdkVersion 21
         multiDexEnabled true
 
         targetSdkVersion 29
-        versionCode 2
-        versionName "2"
+        versionCode 1
+        versionName "1"
     }
     signingConfigs {
         release {
@@ -29,7 +29,7 @@ android {
             def version = variant.versionName
             def date = new Date()
             def formattedDate = date.format('ddMMyy')
-            outputFileName = "PMAYSurvey${variant.buildType.name}_v${version}_${formattedDate}.apk"
+            outputFileName = "AwaasPlusRegistrationSurvey${variant.buildType.name}_v${version}_${formattedDate}.apk"
         }
     }
     buildTypes {

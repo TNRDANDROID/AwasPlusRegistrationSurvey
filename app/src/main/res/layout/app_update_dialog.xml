@@ -3,7 +3,7 @@
     <data>
         <variable
             name="activity"
-            type="com.nic.PMAYSurvey.activity.AppUpdateDialog" />
+            type="com.nic.AwaasPlusRegistrationSurvey.activity.AppUpdateDialog" />
     </data>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="@dimen/margin"
-            android:text="PMAY Survey"
+            android:text="Awaas+ Registration Survey"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
             android:textSize="@dimen/menu_title_size"
@@ -53,7 +53,7 @@
             android:gravity="center"
             android:lineSpacingExtra="5dp"
             android:padding="@dimen/padding"
-            android:text="You need to update PMAY Survey"
+            android:text="You need to update Awaas+ Registration Survey"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             style="@string/font_circular_medium" />
 
@@ -65,7 +65,7 @@
             android:gravity="center"
             android:lineSpacingExtra="5dp"
             android:padding="@dimen/padding"
-            android:text="This version of PMAY Survey is no longer supported. Please go to Official Site and install new version"
+            android:text="This version of Awaas+ Registration Survey is no longer supported. Please go to Official Site and install new version"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             style="@string/font_normal" />
 
