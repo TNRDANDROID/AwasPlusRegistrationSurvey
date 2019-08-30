@@ -1,6 +1,9 @@
 package com.nic.AwaasPlusRegistrationSurvey.utils;
 
 
+import com.nic.AwaasPlusRegistrationSurvey.R;
+import com.nic.AwaasPlusRegistrationSurvey.application.NICApplication;
+
 /**
  * Created by Achanthi Sundar  on 21/03/16.
  */
@@ -9,25 +12,20 @@ public class UrlGenerator {
 
 
     public static String getLoginUrl() {
-//        return "http://10.163.19.140/rdweb/project/webservices_forms/login_service/login_services.php";
-       return "https://tnrd.gov.in/project/webservices_forms/login_service/login_services.php";
+       return NICApplication.getAppString(R.string.LOGIN_URL);
     }
 
     public static String getServicesListUrl() {
-//        return "http://10.163.19.140/rdweb/project/webservices_forms/master_services/master_services.php";
-        return "https://tnrd.gov.in/project/webservices_forms/master_services/master_services.php";
+        return NICApplication.getAppString(R.string.BASE_SERVICES_URL);
     }
 
     public static String getAwassPlusRegistrationListUrl() {
-//        return "http://10.163.19.140/rdweb/project/webservices_forms/pmay/awaas_services.php";
-       return "https://tnrd.gov.in/project/webservices_forms/pmay/awaas_services.php";
+       return NICApplication.getAppString(R.string.APP_MAIN_SERVICES_URL);
     }
 
     public static String getTnrdHostName() {
-//        return "10.163.19.140";
-        return "tnrd.gov.in";
+        return NICApplication.getAppString(R.string.TNRD_HOST_NAME);
     }
-
 
 
 }

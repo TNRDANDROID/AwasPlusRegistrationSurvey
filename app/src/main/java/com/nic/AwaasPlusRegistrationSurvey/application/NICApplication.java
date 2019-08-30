@@ -11,8 +11,10 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.nic.AwaasPlusRegistrationSurvey.BuildConfig;
 import com.nic.AwaasPlusRegistrationSurvey.R;
-
+import com.nic.AwaasPlusRegistrationSurvey.api.LruBitmapCache;
+import com.nic.AwaasPlusRegistrationSurvey.utils.UrlGenerator;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -32,9 +34,6 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
-
-import com.nic.AwaasPlusRegistrationSurvey.api.LruBitmapCache;
-import com.nic.AwaasPlusRegistrationSurvey.utils.UrlGenerator;
 
 /**
  * Created by AchanthiSundar on 28-12-2018.
@@ -82,8 +81,12 @@ public class NICApplication extends Application {
 
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
-//            mRequestQueue = Volley.newRequestQueue(getApplicationContext());
-             mRequestQueue = Volley.newRequestQueue(this, new HurlStack(null, getSocketFactory())); //This for SSl Certificate
+            if (BuildConfig.BUILD_TYPE.equalsIgnoreCase("production")) {
+                mRequestQueue = Volley.newRequestQueue(this, new HurlStack(null, getSocketFactory())); //This for SSl Certificate
+
+            } else {
+                mRequestQueue = Volley.newRequestQueue(getApplicationContext());
+            }
         }
 
         return mRequestQueue;
